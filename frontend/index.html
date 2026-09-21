@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIGHTVISION AI — Intelligent Low-Light Object Detection & Enhancement</title>
+  <meta name="description" content="Illumination-aware AI for reliable object detection in challenging low-light and nocturnal environments using IlluminationNet and RT-DETR transformer architecture.">
+  <meta name="keywords" content="computer vision, low light detection, object detection, RT-DETR, illumination, night vision AI">
+  <meta name="theme-color" content="#2563eb">
+  <meta property="og:title" content="NIGHTVISION AI — Intelligent Low-Light CV Platform">
+  <meta property="og:description" content="Research prototype for low-light object detection with Zero-DCE enhancement and RT-DETR transformer architecture.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌙</text></svg>">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- Real Client-Side ML Neural Network Engine (COCO-SSD / MobileNet) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3/dist/coco-ssd.min.js"></script>
+</head>
+<body>
+  <div id="app-shell">
+    <!-- Collapsible Persistent Sidebar Mount -->
+    <aside id="app-sidebar-mount" aria-label="Main Navigation"></aside>
+
+    <!-- Main Application Workspace -->
+    <div class="app-main">
+      <!-- Fixed Top Status Header Mount -->
+      <header id="app-header-mount" aria-label="Control Bar"></header>
+
+      <!-- Dynamic Page Workspace -->
+      <main class="page-container" id="main-content">
+        <!-- Permanent 7-Stage Pipeline Visualizer Mount -->
+        <section id="app-pipeline-mount" aria-label="Vision Pipeline Status"></section>
+
+        <!-- Active View / Page Mount -->
+        <section id="app-page-mount" aria-label="Active View"></section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Main ES Module Application Entrypoint -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
